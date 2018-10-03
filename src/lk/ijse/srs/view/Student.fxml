@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="442.0" prefWidth="685.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.srs.controller.StudentController">
+   <children>
+      <Label layoutX="301.0" layoutY="32.0" text="Student">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="btnBack" fitHeight="35.0" fitWidth="39.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#btnBackKeyClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8_Go_Back_48px.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblStudent" layoutX="23.0" layoutY="138.0" prefHeight="236.0" prefWidth="643.0" AnchorPane.topAnchor="138.0">
+        <columns>
+          <TableColumn prefWidth="82.0" text="NIC" />
+          <TableColumn prefWidth="95.0" text="Name" />
+            <TableColumn prefWidth="87.0" text="Address" />
+            <TableColumn prefWidth="103.0" text="Contact No" />
+            <TableColumn prefWidth="82.0" text="Course" />
+            <TableColumn prefWidth="57.0" text="Batch" />
+            <TableColumn prefWidth="69.0" text="Edit" />
+            <TableColumn prefWidth="67.0" text="Remove" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="btnAddStudent" fitHeight="45.0" fitWidth="48.0" layoutX="628.0" layoutY="387.0" onMouseClicked="#btnAddStudentOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8_Add_New_48px.png" />
+         </image>
+      </ImageView>
+      <JFXTextField layoutX="270.0" layoutY="85.0" promptText="Search Student">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

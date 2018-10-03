@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="lk.ijse.srs.controller.DashboardController">
+   <children>
+      <Label layoutX="267.0" layoutY="37.0" text="IJSE" textAlignment="CENTER" textFill="#ee0404">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgStudent" fitHeight="104.0" fitWidth="112.0" layoutX="85.0" layoutY="148.0" onMouseClicked="#imgStudentOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/student_pic.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgCourse" fitHeight="104.0" fitWidth="112.0" layoutX="258.0" layoutY="148.0" onMouseClicked="#imgCourseOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8_Workspace_48px.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgBatch" fitHeight="104.0" fitWidth="112.0" layoutX="428.0" layoutY="148.0" onMouseClicked="#imgBatchOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8_User_Groups_48px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="106.0" layoutY="267.0" text="Student">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="282.0" layoutY="267.0" text="Course">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="458.0" layoutY="267.0" text="Batch">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

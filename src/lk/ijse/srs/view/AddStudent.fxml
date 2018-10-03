@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.srs.controller.AddStudentController">
+   <children>
+      <JFXButton fx:id="btnSave" layoutX="220.0" layoutY="303.0" onAction="#btnSaveOnClick" style="-fx-background-color: red;" text="Save" textAlignment="CENTER" textFill="#fcfafa" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="325.0" AnchorPane.topAnchor="303.0">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="79.0" layoutY="117.0" text="NIC">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtNic" layoutX="112.0" layoutY="115.0" />
+      <Label layoutX="334.0" layoutY="117.0" text="Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtName" layoutX="385.0" layoutY="115.0" />
+      <Label layoutX="52.0" layoutY="170.0" text="Address">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtAddress" layoutX="112.0" layoutY="168.0" />
+      <Label layoutX="322.0" layoutY="170.0" text="Contact">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtContact" layoutX="385.0" layoutY="168.0" />
+      <JFXComboBox fx:id="cmbCourse" layoutX="112.0" layoutY="217.0" onAction="#cmbCourseOnAction" prefHeight="25.0" prefWidth="135.0" />
+      <Label layoutX="56.0" layoutY="219.0" text="Course">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbBatch" layoutX="385.0" layoutY="217.0" prefHeight="25.0" prefWidth="135.0" />
+      <Label layoutX="336.0" layoutY="219.0" text="Batch">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnClear" layoutX="307.0" layoutY="303.0" onAction="#btnClearOnClick" style="-fx-background-color: red;" text="Clear" textAlignment="CENTER" textFill="#fcfafa">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="209.0" layoutY="38.0" text="Add Students">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="btnClose" fitHeight="35.0" fitWidth="39.0" layoutX="551.0" layoutY="14.0" onMouseClicked="#btnCloseOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8_Close_Window_48px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
